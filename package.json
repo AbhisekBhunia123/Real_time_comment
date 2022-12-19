@@ -1,0 +1,17 @@
+{
+  "name": "realtime-comment",
+  "version": "1.0.0",
+  "description": "This is a realtime comment system",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server"
+  },
+  "author": "Abhi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "socket.io": "^4.5.4"
+  }
+}

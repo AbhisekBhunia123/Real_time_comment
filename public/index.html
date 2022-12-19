@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comment System</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4><strong>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at mi venenatis commodo sed sit amet ex. Suspendisse egestas, urna vel dapibus dictum, lacus ipsum sollicitudin lacus, at sodales orci orci ut erat. Integer a scelerisque justo. Ut varius purus lectus, eget sodales ex pulvinar sed. Etiam tincidunt scelerisque turpis. Nam mollis pulvinar cursus. Mauris odio ligula, elementum quis massa quis, malesuada suscipit dolor. Sed eget risus est. Nullam in tellus augue. Maecenas tempor elit nisi, non sollicitudin leo ornare quis.</p>
+
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">Comments</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a comment</label>
+                    <textarea id="textarea" cols="3" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2">
+                <button id="submitBtn" class="btn btn-primary" style="float: right;">Post Comment</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="typing text-success" style="height: 20px;"></div>
+                <ul class="comment_box">
+                    <!-- <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>John Doe</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at mi venenatis commodo sed sit amet ex.</p>
+                                <div>
+                                    <img src="/img/clock.png" alt="clock" />
+                                    <small>11.30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>John Doe</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at mi venenatis commodo sed sit amet ex.</p>
+                                <div>
+                                    <img src="/img/clock.png" alt="clock" />
+                                    <small>11.30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
